@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <CodeProperty PropertyKey="Entity" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.EntityData" TemplateFileName="EmptyEntity.cs" CodeFileNameTopropertyName="FileName">
+	<Property name="1.文件名" propertyName="FileName" category="杂项" description="代码存储的文件名称"></Property>
+    <Property name="2.类名" propertyName="ClassName" category="杂项" description="实体类的名称"></Property>
+    <Property name="3.属性集合" propertyName="PropertyList" category="杂项" description="格式如：string|Name,int|Id"></Property>
+  </CodeProperty>
+  <CodeProperty PropertyKey="Dao" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.DaoData" TemplateFileName="EmptyDao.cs" CodeFileNameTopropertyName="FileName">
+	<Property name="1.文件名" propertyName="FileName" category="杂项" description="代码存储的文件名称"></Property>
+    <Property name="2.类名" propertyName="ClassName" category="杂项" description="Dao类的名称"></Property>
+  </CodeProperty>
+  <CodeProperty PropertyKey="ObjectModel" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.ObjectModelData" TemplateFileName="EmptyObjectModel.cs" CodeFileNameTopropertyName="FileName">
+	<Property name="1.文件名" propertyName="FileName" category="杂项" description="代码存储的文件名称"></Property>
+    <Property name="2.类名" propertyName="ClassName" category="杂项" description="ObjectModel类的名称"></Property>
+	<Property name="3.访问Dao类名" propertyName="DaoName" category="杂项" description="ObjectModel操作数据库的Dao类"></Property>
+  </CodeProperty>
+  <CodeProperty PropertyKey="WebServices" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.WebServicesData" TemplateFileName="EmptyService.cs" CodeFileNameTopropertyName="FileName">
+	<Property name="1.文件名" propertyName="FileName" category="杂项" description="代码存储的文件名称"></Property>
+    <Property name="2.类名" propertyName="ClassName" category="杂项" description="WebServices类的名称"></Property>
+  </CodeProperty>
+  <CodeProperty PropertyKey="WinViewForm" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.WinViewFormData" TemplateFileName="EmptyViewform.cs|EmptyViewform.Designer.cs|EmptyIViewform.cs" CodeFileNameTopropertyName="FileNameViewForm|FileNameDesigner|FileNameIView">
+	<Property name="1.界面文件名" propertyName="FileNameViewForm" category="1.界面" description="代码存储的文件名称"></Property>
+    <Property name="2.类名" propertyName="ClassName" category="1.界面" description="界面类的名称"></Property>
+	<Property name="1.接口文件名" propertyName="FileNameIView" category="2.接口" description="代码存储的文件名称"></Property>
+    <Property name="2.接口名" propertyName="IFaceName" category="2.接口" description="接口类的名称"></Property>
+  </CodeProperty>
+  <CodeProperty PropertyKey="WinController" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.WinControllerData" TemplateFileName="EmptyWinController.cs" CodeFileNameTopropertyName="FileName">
+	<Property name="1.文件名" propertyName="FileName" category="杂项" description="代码存储的文件名称"></Property>
+    <Property name="2.类名" propertyName="ClassName" category="杂项" description="WinController类的名称"></Property>
+	<Property name="3.关联界面类名" propertyName="ViewFormName" category="杂项" description="控制器对应的默认界面"></Property>
+	<Property name="4.关联界面接口名" propertyName="IViewName" category="杂项" description="控制器对应的默认界面接口"></Property>
+  </CodeProperty>
+  <CodeProperty PropertyKey="WcfViewForm" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.WcfViewFormData" TemplateFileName="WcfEmptyViewform.cs|WcfEmptyViewform.Designer.cs|WcfEmptyIViewform.cs" CodeFileNameTopropertyName="FileNameViewForm|FileNameDesigner|FileNameIView">
+	<Property name="1.界面文件名" propertyName="FileNameViewForm" category="1.界面" description="代码存储的文件名称"></Property>
+    <Property name="2.类名" propertyName="ClassName" category="1.界面" description="wcf界面类的名称"></Property>
+	<Property name="1.接口文件名" propertyName="FileNameIView" category="2.接口" description="代码存储的文件名称"></Property>
+    <Property name="2.接口名" propertyName="IFaceName" category="2.接口" description="wcf接口类的名称"></Property>
+  </CodeProperty>
+  <CodeProperty PropertyKey="WcfClientController" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.WcfClientControllerData" TemplateFileName="EmptyWcfClientController.cs" CodeFileNameTopropertyName="FileName">
+	<Property name="1.文件名" propertyName="FileName" category="杂项" description="代码存储的文件名称"></Property>
+    <Property name="2.类名" propertyName="ClassName" category="杂项" description="WinController类的名称"></Property>
+	<Property name="3.关联界面类名" propertyName="ViewFormName" category="杂项" description="控制器对应的默认界面"></Property>
+	<Property name="4.关联界面接口名" propertyName="IViewName" category="杂项" description="控制器对应的默认界面接口"></Property>
+  </CodeProperty>
+  <CodeProperty PropertyKey="WcfServerController" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.WcfServerControllerData" TemplateFileName="EmptyWcfServerController.cs" CodeFileNameTopropertyName="FileName">
+	<Property name="1.文件名" propertyName="FileName" category="杂项" description="代码存储的文件名称"></Property>
+    <Property name="2.类名" propertyName="ClassName" category="杂项" description="WCF服务控制器类的名称"></Property>
+  </CodeProperty>
+  <CodeProperty PropertyKey="AspxJS" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.AspxJSData" TemplateFileName="EmptyAspx.aspx|EmptyJS.js" CodeFileNameTopropertyName="FileNameAspx|FileNameJS">
+	<Property name="1.文件名" propertyName="FileNameAspx" category="1.界面" description="代码存储的文件名称"></Property>
+    <Property name="2.引用Jquery" propertyName="IsJquery" category="1.界面" description="自动创建引用Jquery的脚本代码"></Property>
+    <Property name="3.引用JqueryEasyUI" propertyName="IsJqueryEasyUI" category="1.界面" description="自动创建引用JqueryEasyUI的脚本代码"></Property>
+	<Property name="4.引用bootstrap" propertyName="Isbootstrap" category="1.界面" description="自动创建引用bootstrap的脚本代码"></Property>
+	<Property name="1.文件名" propertyName="FileNameJS" category="2.脚本" description="代码存储的文件名称"></Property>
+  </CodeProperty>
+  <CodeProperty PropertyKey="WebController" CodeDataClassName="PluginManageTool.CodeMaker.CodeData.WebControllerData" TemplateFileName="EmptyWebController.cs" CodeFileNameTopropertyName="FileName">
+	<Property name="1.文件名" propertyName="FileName" category="杂项" description="代码存储的文件名称"></Property>
+    <Property name="2.类名" propertyName="ClassName" category="杂项" description="WebController控制器类的名称"></Property>
+  </CodeProperty>
+</root>

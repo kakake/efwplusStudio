@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <treeView>
+    <treeNode id="1" text="插件项目">
+      <treeNode id="11" text="Web插件" selected="true"></treeNode>
+      <treeNode id="12" text="Winform插件"></treeNode>
+      <treeNode id="13" text="Wcf插件"></treeNode>
+    </treeNode>
+  </treeView>
+  <listView>
+    <listViewGroup text="插件项目">
+      <listViewItem id="1" text="普通Web插件" imageKey="solution.png" nodeid="11" plugintype="Web" Description="空Web项目" filePath="EmptyWebProject.zip" ></listViewItem>
+      <listViewItem id="2" text="普通Winform插件" imageKey="solution.png" nodeid="12" plugintype="Winform" Description="空Winform项目" filePath="EmptyWinformProject.zip"></listViewItem>
+      <listViewItem id="3" text="普通Wcf插件" imageKey="solution.png" nodeid="13" plugintype="Wcf" Description="空Wcf项目" filePath="EmptyWcfProject.zip" ></listViewItem>
+
+      <listViewItem id="4" text="(WebForm)Web插件" imageKey="solution.png" nodeid="11" plugintype="Web" Description="(WebForm)Web项目" filePath="WebProject_WebForm.zip" ></listViewItem>
+      <listViewItem id="5" text="(NVelocity)Web插件" imageKey="solution.png" nodeid="11" plugintype="Web" Description="(NVelocity)Web项目" filePath="WebProject_NVelocity.zip" ></listViewItem>
+      <listViewItem id="6" text="(Razor)Web插件" imageKey="solution.png" nodeid="11" plugintype="Web" Description="(Razor)Web项目" filePath="WebProject_Razor.zip" ></listViewItem>
+      <listViewItem id="7" text="(asp.net Mvc)Web插件" imageKey="solution.png" nodeid="11" plugintype="Web" Description="(asp.net Mvc)Web项目" filePath="WebProject_AspNetMvc.zip" ></listViewItem>
+	  
+	    <listViewItem id="8" text="带权限模块的Web插件" imageKey="solution.png" nodeid="11" plugintype="Web" Description="带权限模块的Web项目" filePath="EmptyWebProject.zip" ></listViewItem>
+	    <listViewItem id="9" text="带权限模块的Winform插件" imageKey="solution.png" nodeid="12" plugintype="Winform" Description="带权限模块的Winform项目" filePath="EmptyWinformProject.zip"></listViewItem>
+      <listViewItem id="10" text="带权限模块的Wcf插件" imageKey="solution.png" nodeid="13" plugintype="Wcf" Description="带权限模块的Wcf项目" filePath="EmptyWcfProject.zip" ></listViewItem>
+	  
+    </listViewGroup>
+  </listView>
+</root>

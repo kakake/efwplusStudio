@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pluginsys>
+  <WebComponentPlugin>
+  </WebComponentPlugin>
+  <WebModulePlugin>
+  </WebModulePlugin>
+  <WinformModulePlugin>
+  </WinformModulePlugin>
+  <WcfModulePlugin>
+  </WcfModulePlugin>
+</pluginsys>

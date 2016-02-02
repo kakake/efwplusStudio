@@ -1,0 +1,125 @@
+Object Report
+	Version='5.8.0.6'
+	Title='你的报表标题'
+	Object Font
+		Name='宋体'
+		Size=105000,0
+		Weight=400
+		Charset=134
+	End
+	Object Printer
+	End
+	Object DetailGrid
+		Object Recordset
+			Items Field
+				Item
+					Name='Id'
+				End
+				Item
+					Name='BookName'
+				End
+				Item
+					Name='BuyPrice'
+					Type=Integer
+				End
+				Item
+					Name='BuyDate'
+				End
+			End
+		End
+		Items Column
+			Item
+				Name='Column1'
+				Width=4.28625
+			End
+			Item
+				Name='Column2'
+				Width=1.69333
+			End
+			Item
+				Name='Column3'
+				Width=3.38667
+			End
+			Item
+				Name='Column4'
+				Width=6.21771
+			End
+		End
+		Object ColumnContent
+			Items ColumnContentCell
+				Item
+					Column='Column1'
+					DataField='BookName'
+				End
+				Item
+					Column='Column2'
+					DataField='Id'
+				End
+				Item
+					Column='Column3'
+					DataField='BuyPrice'
+				End
+				Item
+					Column='Column4'
+					DataField='BuyDate'
+				End
+			End
+		End
+		Object ColumnTitle
+			Items ColumnTitleCell
+				Item
+					GroupTitle=F
+					Column='Column2'
+					Text='编码'
+				End
+				Item
+					GroupTitle=F
+					Column='Column1'
+					Text='名称'
+				End
+				Item
+					GroupTitle=F
+					Column='Column3'
+					Text='价格'
+				End
+				Item
+					GroupTitle=F
+					Column='Column4'
+					Text='购买时间'
+				End
+			End
+		End
+	End
+	Items Parameter
+		Item
+			Name='报表名称'
+		End
+		Item
+			Name='打印时间'
+		End
+		Item
+			Name='当前科室'
+		End
+		Item
+			Name='当前人员'
+		End
+	End
+	Items Section
+		Item
+			Type=ReportHeader
+			Height=0.79375
+			Items Control
+				Item
+					Type=StaticBox
+					Name='StaticBox1'
+					Left=5.60917
+					Top=0.211667
+					Width=2.59292
+					Height=0.396875
+					Text='StaticBox1'
+					Parameter='报表名称'
+				End
+			End
+		End
+	End
+End

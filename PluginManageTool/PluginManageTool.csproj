@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{600B220D-CBFC-4537-95EB-4DCFE0666B39}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PluginManageTool</RootNamespace>
+    <AssemblyName>PluginManageTool</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>pm.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <StartupObject>
+    </StartupObject>
+    <TargetFrameworkProfile />
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\efwplus开发平台\PluginManageTool\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.0.0.0, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.TextEditor, Version=3.0.0.3683, Culture=neutral, PublicKeyToken=4d61825e8dd49f1a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\ICSharpCode.TextEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Visio, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Visio.SaveAsWeb, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Library\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleUpdater, Version=1.5.4.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\efwplus开发平台\WinformPlatform\SimpleUpdater.EXE</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.DirectoryServices.Protocols" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CodeMaker\AbstractCodeTemplateData.cs" />
+    <Compile Include="CodeMaker\CodeData\AspxJSData.cs" />
+    <Compile Include="CodeMaker\CodeData\DaoData.cs" />
+    <Compile Include="CodeMaker\CodeData\EntityData.cs" />
+    <Compile Include="CodeMaker\CodeData\ObjectModelData.cs" />
+    <Compile Include="CodeMaker\CodeData\WcfClientControllerData.cs" />
+    <Compile Include="CodeMaker\CodeData\WcfServerControllerData.cs" />
+    <Compile Include="CodeMaker\CodeData\WcfViewFormData.cs" />
+    <Compile Include="CodeMaker\CodeData\WebControllerData.cs" />
+    <Compile Include="CodeMaker\CodeData\WebServicesData.cs" />
+    <Compile Include="CodeMaker\CodeData\WinControllerData.cs" />
+    <Compile Include="CodeMaker\CodeData\WinViewFormData.cs" />
+    <Compile Include="CodeMaker\CustomProperty\CustomProperty.cs" />
+    <Compile Include="CodeMaker\CustomProperty\CustomPropertyCollection.cs" />
+    <Compile Include="CodeMaker\CustomProperty\CustomPropertyDescriptor.cs" />
+    <Compile Include="CodeMaker\EntityTemplateData.cs" />
+    <Compile Include="CodeMaker\FrmCodeEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeMaker\FrmCodeEditor.Designer.cs">
+      <DependentUpon>FrmCodeEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeMaker\FrmEntityMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CodeMaker\FrmEntityMaker.Designer.cs">
+      <DependentUpon>FrmEntityMaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CodeMaker\ICodeMaker.cs" />
+    <Compile Include="CodeMaker\SQLHelper.cs" />
+    <Compile Include="Common\CommonHelper.cs" />
+    <Compile Include="Common\FastZipHelper.cs" />
+    <Compile Include="Common\HttpWebResponseUtility.cs" />
+    <Compile Include="Common\installController.cs" />
+    <Compile Include="Common\MsBuildCommand.cs" />
+    <Compile Include="Common\NewTemplateProject.cs" />
+    <Compile Include="Common\PluginSysManage.cs" />
+    <Compile Include="Common\SQLHelper.cs" />
+    <Compile Include="Common\TemplateHelper.cs" />
+    <Compile Include="Common\UpDownLoadFileHelper.cs" />
+    <Compile Include="Common\VSOpenCommand.cs" />
+    <Compile Include="FrmAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAdd.Designer.cs">
+      <DependentUpon>FrmAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCodeMaker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCodeMaker.Designer.cs">
+      <DependentUpon>FrmCodeMaker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDatabase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDatabase.Designer.cs">
+      <DependentUpon>frmDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIssue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIssue.Designer.cs">
+      <DependentUpon>FrmIssue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPack.Designer.cs">
+      <DependentUpon>FrmPack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDevSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDevSetting.Designer.cs">
+      <DependentUpon>FrmDevSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPackSrc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPackSrc.Designer.cs">
+      <DependentUpon>FrmPackSrc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPluginConfigEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPluginConfigEdit.Designer.cs">
+      <DependentUpon>FrmPluginConfigEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPluginLoadManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPluginLoadManage.Designer.cs">
+      <DependentUpon>FrmPluginLoadManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmprogress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmprogress.Designer.cs">
+      <DependentUpon>frmprogress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSetting.Designer.cs">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CodeMaker\FrmCodeEditor.resx">
+      <DependentUpon>FrmCodeEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeMaker\FrmEntityMaker.resx">
+      <DependentUpon>FrmEntityMaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAdd.resx">
+      <DependentUpon>FrmAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCodeMaker.resx">
+      <DependentUpon>FrmCodeMaker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDatabase.resx">
+      <DependentUpon>frmDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDevSetting.resx">
+      <DependentUpon>FrmDevSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIssue.resx">
+      <DependentUpon>FrmIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPack.resx">
+      <DependentUpon>FrmPack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPackSrc.resx">
+      <DependentUpon>FrmPackSrc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPluginConfigEdit.resx">
+      <DependentUpon>FrmPluginConfigEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPluginLoadManage.resx">
+      <DependentUpon>FrmPluginLoadManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmprogress.resx">
+      <DependentUpon>frmprogress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSetting.resx">
+      <DependentUpon>FrmSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pm.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

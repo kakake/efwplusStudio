@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pluginsys>
+  <WebComponentPlugin>
+  </WebComponentPlugin>
+  <WebModulePlugin>
+  </WebModulePlugin>
+  <WinformModulePlugin EntryPlugin="WinMainUIFrame" EntryController="LoginController">
+  </WinformModulePlugin>
+  <WcfModulePlugin EntryPlugin="WcfMainUIFrame" EntryController="wcfclientLoginController">
+  </WcfModulePlugin>
+</pluginsys>
